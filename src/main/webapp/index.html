@@ -25,6 +25,7 @@
     <h2>Selling a cat</h2>
     <img itemprop="image"
          src="http://2.bp.blogspot.com/-y4Kfx_wvqDg/UHcWUaJCYII/AAAAAAAAEM8/YpXE-sYkhys/s640/happy-kitten-kittens-5890512-1600-1200.jpg"/>
+
     <div itemprop="name">Eddie, The Cat</div>
     <article itemprop="description">
         Hello Kitty (яп. ハローキティ харо: кити?, от англ. «Привет, киска») — персонаж японской поп-культуры, маленькая белая
@@ -66,37 +67,39 @@
             <span itemprop="addressLocality">Paris, France</span>
             ,
         </div>
-        <label for="telephone">Telephone</label>
+        <div>
+        <span for="telephone">Telephone</span>
         <span id="telephone" itemprop="telephone"><a href="skype:boui-rocksy?call">( 33 1) 42 68 53 00 </a></span>
-        <label for="fax">Fax</label>
-        <span id="fax" itemprop="faxNumber">( 33 1) 42 68 53 01 </span>
-        <label for="email">E-mail</label>
-        <address id="email" itemprop="email" ><a href="mailto:your@email.address?subject=Buy a nicy nice cat">eddiebuy.org</a></address>
 
-        Members:
-        - National Scientific Members in 100 countries and territories: Country1, Country2, ...
-        - Scientific Union Members, 30 organizations listed in this Yearbook:
+        <span for="fax">Fax</span>
+        <span id="fax" itemprop="faxNumber">( 33 1) 42 68 53 01 </span>
+
+        <span for="email">E-mail</span>
+        <address id="email" itemprop="email"><a href="mailto:your@email.address?subject=Buy a nicy nice cat">eddiebuy.org</a></address>
+        </div>
     </article>
 </section>
 
 <section id="register">
     <h2>You are always welcomed to left us you personal information!</h2>
+
     <form method="POST" action="register">
         <label>Email</label>
-        <input type="email" name="email" placeholder="Put your email here"/>
+        <input type="email" name="email" placeholder="Put your email here" maxlength="50"/>
         <label>Name</label>
         <input type="text" name="name" maxlength="50"/>
         <label>Password</label>
-        <input type="password" name="password" />
+        <input type="password" name="password" maxlength="15"/>
         <input type="submit" value="Register"/>
     </form>
 </section>
 
 <section id="feedback">
     <h2>So, what you think?</h2>
+
     <form method="POST" action="feedback">
         <label>I am:</label>
-        <input type="email" name="email" placeholder="You name"/>
+        <input type="email" name="email" placeholder="You name" maxlength="50"/>
         <label>You think</label>
         <input type="text" name="name" maxlength="50" placeholder="Lol you're funny"/>
 
@@ -104,8 +107,21 @@
     </form>
 </section>
 
+<br/>
+
 <footer>
-    &copy Rocksy Seletska, LOLD Inc.
+    <article>
+        <span><a href="#about">About</a>|</span>
+        <span><a href="#faq">Faq</a>|</span>
+        <span><a href="#contacts">Contacts</a>|</span>
+        <span><a href="#register">Register</a>|</span>
+        <span><a href="#feedback">Feedback</a></span>
+    </article>
+    <article>
+        &copy Rocksy Seletska, LOLD Inc.
+    </article>
+    <a href="https://www.google.com/search?client=ubuntu&channel=fs&q=lol&ie=utf-8&oe=utf-8">Terms of service</a>
+
 </footer>
 
 </html>

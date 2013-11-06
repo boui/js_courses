@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e17bf2af-3b31-47e9-96c9-b0f444ea3b26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <ignored path="js_courses.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="e17bf2af-3b31-47e9-96c9-b0f444ea3b26" time="1383760342356" ignored="false" />
+    <file path="/index.html" changelist="e17bf2af-3b31-47e9-96c9-b0f444ea3b26" time="1383761160910" ignored="false" />
     <file path="/Dummy.txt" changelist="e17bf2af-3b31-47e9-96c9-b0f444ea3b26" time="1383753924902" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="10" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.3611111">
+            <state line="122" column="91" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.78640777">
               <folding />
             </state>
           </provider>
@@ -442,7 +441,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="10" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.3611111">
+        <state line="122" column="91" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.78640777">
           <folding />
         </state>
       </provider>
