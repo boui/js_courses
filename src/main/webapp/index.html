@@ -13,7 +13,8 @@
     <span><a href="#about">About</a>|</span>
     <span><a href="#faq">Faq</a>|</span>
     <span><a href="#contacts">Contacts</a>|</span>
-    <span><a href="#register">Register</a></span>
+    <span><a href="#register">Register</a>|</span>
+    <span><a href="#feedback">Feedback</a></span>
 </nav>
 
 <section id="top">
@@ -80,11 +81,26 @@
 
 <section id="register">
     <h2>You are always welcomed to left us you personal information!</h2>
-    <form method="POST">
+    <form method="POST" action="register">
         <label>Email</label>
-        <input type="email" placeholder="Put your email here"/>
+        <input type="email" name="email" placeholder="Put your email here"/>
         <label>Name</label>
+        <input type="text" name="name" maxlength="50"/>
         <label>Password</label>
+        <input type="password" name="password" />
+        <input type="submit" value="Register"/>
+    </form>
+</section>
+
+<section id="feedback">
+    <h2>So, what you think?</h2>
+    <form method="POST" action="feedback">
+        <label>I am:</label>
+        <input type="email" name="email" placeholder="You name"/>
+        <label>You think</label>
+        <input type="text" name="name" maxlength="50" placeholder="Lol you're funny"/>
+
+        <input type="submit" value="Register"/>
     </form>
 </section>
 
