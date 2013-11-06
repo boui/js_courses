@@ -3,44 +3,39 @@
 <html>
 <head>
     <title>Homework1</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <nav id="menu">
     <ul>
-        <li>
-            <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#faq">Faq</a>
-        </li>
-        <li>
-            <a href="#contacts">Contacts</a>
-        </li>
-        <li>
-            <a href="#register">Register</a>
-        </li>
-        <li>
-            <a href="#feedback">Feedback</a>
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#feedback">Feedback</a></li>
     </ul>
 </nav>
 <section id="top">
     <h1>My first homework</h1>
 </section>
+
 <section id="about" itemscope itemtype="http://schema.org/Product">
     <h2>Selling a cat</h2>
     <img itemprop="image"
          src="http://2.bp.blogspot.com/-y4Kfx_wvqDg/UHcWUaJCYII/AAAAAAAAEM8/YpXE-sYkhys/s640/happy-kitten-kittens-5890512-1600-1200.jpg"/>
 
-    <div itemprop="name">Eddie, The Cat</div>
-    <article itemprop="description">
-        Hello Kitty (яп. ハローキティ харо: кити?, от англ. «Привет, киска») — персонаж японской поп-культуры, маленькая белая
-        кошечка (см. девушка-кошка) в упрощенной прорисовке. Придумана компанией Sanrio в 1974 году и стала своеобразным
-        мемом. Торговая марка Hello Kitty, зарегистрированная в 1976 году, используется в качестве бренда для многих
-        продуктов, стала главным героем одноимённого мультсериала, появляется в ролях-камео в других мультфильмах.
-        Игрушки Hello Kitty — популярные в Японии и во всём мире сувениры.
-    </article>
+    <dl itemprop="description">
+        <dt itemprop="name">Eddie, The Cat</dt>
+        <dd>
+            Hello Kitty (яп. ハローキティ харо: кити?, от англ. «Привет, киска») — персонаж японской поп-культуры, маленькая
+            белая
+            кошечка (см. девушка-кошка) в упрощенной прорисовке. Придумана компанией Sanrio в 1974 году и стала
+            своеобразным
+            мемом. Торговая марка Hello Kitty, зарегистрированная в 1976 году, используется в качестве бренда для многих
+            продуктов, стала главным героем одноимённого мультсериала, появляется в ролях-камео в других мультфильмах.
+            Игрушки Hello Kitty — популярные в Японии и во всём мире сувениры.
+        </dd>
+    </dl>
 </section>
 <section id="faq">
     <h2>Don't you forget about AWS?!!FAQ</h2>
@@ -74,6 +69,29 @@
             </address>
         </div>
     </article>
+
+    <h3>Interested in, who made this page?</h3>
+    <div class="vcard">
+        <div>Roksana Seletska</div>
+        <a class="fn org url" href="http://www.levi9.com/">Levi9</a>
+        <div class="adr">
+            <span class="type">Work</span>:
+            <div class="street-address">Ohtirsky av.</div>
+            <span class="locality">Kyiv</span>,
+            <!--<abbr class="region" title="California"></abbr>-->
+            <!--<span class="postal-code">9430</span>-->
+            <div class="country-name">UA</div>
+        </div>
+        <div class="tel">
+            <span class="type">Work</span> +38-097-000-00-00
+        </div>
+        <div class="tel">
+            <span class="type">Fax</span> +1-650-289-4041
+        </div>
+        <div>Email:
+            <span class="email"><a href="mailto:rocks@gmail.com">rocks@gmail.com</a></span>
+        </div>
+    </div>
 </section>
 <section id="register">
     <h2>You are always welcomed to left us you personal information!</h2>
