@@ -1,3 +1,6 @@
 .idea/
+.idea_modules/
+.idea_modules/workspace.xml
 *.iml
 *.iws
+
