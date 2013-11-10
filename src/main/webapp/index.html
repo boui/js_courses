@@ -1,138 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Homework1</title>
+    <title>Homework1,2</title>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="http://css-reset-sheet.googlecode.com/svn/reset.css">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css' />
 </head>
 <body>
-<nav id="menu">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">Faq</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-    </ul>
-</nav>
-<section id="top">
-    <h1>My first homework</h1>
-</section>
+<div id="wrapper">
+    <nav id="menu">
+        <ul class="nav-menu">
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+    <section id="top">
+        <h1>My first+second homework</h1>
+    </section>
 
-<section id="about" itemscope itemtype="http://schema.org/Product">
-    <h2>Selling a cat</h2>
-    <img itemprop="image"
-         src="http://2.bp.blogspot.com/-y4Kfx_wvqDg/UHcWUaJCYII/AAAAAAAAEM8/YpXE-sYkhys/s640/happy-kitten-kittens-5890512-1600-1200.jpg"/>
+    <section id="about" itemscope itemtype="http://schema.org/Product">
+        <h2>Selling a cat</h2>
+        <img itemprop="image"
+             src="http://2.bp.blogspot.com/-y4Kfx_wvqDg/UHcWUaJCYII/AAAAAAAAEM8/YpXE-sYkhys/s640/happy-kitten-kittens-5890512-1600-1200.jpg"/>
 
-    <dl itemprop="description">
-        <dt itemprop="name">Eddie, The Cat</dt>
-        <dd>
-            Hello Kitty (яп. ハローキティ харо: кити?, от англ. «Привет, киска») — персонаж японской поп-культуры, маленькая
-            белая
-            кошечка (см. девушка-кошка) в упрощенной прорисовке. Придумана компанией Sanrio в 1974 году и стала
-            своеобразным
-            мемом. Торговая марка Hello Kitty, зарегистрированная в 1976 году, используется в качестве бренда для многих
-            продуктов, стала главным героем одноимённого мультсериала, появляется в ролях-камео в других мультфильмах.
-            Игрушки Hello Kitty — популярные в Японии и во всём мире сувениры.
-        </dd>
-    </dl>
-</section>
-<section id="faq">
-    <h2>Don't you forget about AWS?!!FAQ</h2>
-    <ul>
-        <li><a href="http://google.com.ua">What should I do if I can't find what I
-            want to sell in the Amazon catalog?</a>
-        </li>
-        <li><a href="http://google.com.ua">How do I decide if a Professional selling
-            plan is right for me?</a>
-        </li>
-    </ul>
-</section>
-<section id="contacts">
-    <h2>I see you want to buy a Eddie? Here are our contacts:</h2>
-    <article itemscope itemtype="http://schema.org/Organization">
-        <span itemprop="name">LOLD INc.</span>
-        Contact Details:
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            Main address:
-            <span itemprop="streetAddress">38 avenue de l'Opera</span>
-            <span itemprop="postalCode">F-75002</span>
-            <span itemprop="addressLocality">Paris, France</span>
-        </div>
-        <div>
-            <span for="telephone">Telephone</span>
-            <span id="telephone" itemprop="telephone"><a href="skype:boui-rocksy?call">( 33 1) 42 68 53 00 </a></span>
-            <span for="fax">Fax</span>
-            <span id="fax" itemprop="faxNumber">( 33 1) 42 68 53 01 </span>
-            <span for="email">E-mail</span>
-            <address id="email" itemprop="email"><a href="mailto:your@email.address?subject=Buy a nicy nice cat">eddiebuy.org</a>
-            </address>
-        </div>
-    </article>
+        <dl itemprop="description">
+            <dt itemprop="name">Eddie, The Cat</dt>
+            <dd>
+                Hello Kitty (яп. ハローキティ харо: кити?, от англ. «Привет, киска») — персонаж японской поп-культуры,
+                маленькая
+                белая
+                кошечка (см. девушка-кошка) в упрощенной прорисовке. Придумана компанией Sanrio в 1974 году и стала
+                своеобразным
+                мемом. Торговая марка Hello Kitty, зарегистрированная в 1976 году, используется в качестве бренда для
+                многих
+                продуктов, стала главным героем одноимённого мультсериала, появляется в ролях-камео в других
+                мультфильмах.
+                Игрушки Hello Kitty — популярные в Японии и во всём мире сувениры.
+            </dd>
+        </dl>
+    </section>
+    <section id="faq" class="special">
+        <h2>Don't you forget about AWS?!!FAQ</h2>
+        <ul>
+            <li><a href="http://google.com.ua">What should I do if I can't find what I
+                want to sell in the Amazon catalog?</a>
+            </li>
+            <li><a href="http://google.com.ua">How do I decide if a Professional selling
+                plan is right for me?</a>
+            </li>
+        </ul>
+    </section>
+    <section id="contacts">
+        <h2>I see you want to buy a Eddie? Here are our contacts:</h2>
+        <article itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">LOLD INc.</span>
+            Contact Details:
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                Main address:
+                <span itemprop="streetAddress">38 avenue de l'Opera</span>
+                <span itemprop="postalCode">F-75002</span>
+                <span itemprop="addressLocality">Paris, France</span>
+            </div>
+            <div>
+                <span for="telephone">Telephone</span>
+                <span id="telephone" itemprop="telephone"><a href="skype:boui-rocksy?call">( 33 1) 42 68 53
+                    00 </a></span>
+                <span for="fax">Fax</span>
+                <span id="fax" itemprop="faxNumber">( 33 1) 42 68 53 01 </span>
+                <span for="email">E-mail</span>
+                <address id="email" itemprop="email"><a href="mailto:your@email.address?subject=Buy a nicy nice cat">eddiebuy.org</a>
+                </address>
+            </div>
+        </article>
 
-    <h3>Interested in, who made this page?</h3>
-    <div class="vcard">
-        <div>Roksana Seletska</div>
-        <a class="fn org url" href="http://www.levi9.com/">Levi9</a>
-        <div class="adr">
-            <span class="type">Work</span>:
-            <div class="street-address">Ohtirsky av.</div>
-            <span class="locality">Kyiv</span>,
-            <!--<abbr class="region" title="California"></abbr>-->
-            <!--<span class="postal-code">9430</span>-->
-            <div class="country-name">UA</div>
-        </div>
-        <div class="tel">
-            <span class="type">Work</span> +38-097-000-00-00
-        </div>
-        <div class="tel">
-            <span class="type">Fax</span> +1-650-289-4041
-        </div>
-        <div>Email:
-            <span class="email"><a href="mailto:rocks@gmail.com">rocks@gmail.com</a></span>
-        </div>
-    </div>
-</section>
-<section id="register">
-    <h2>Bring your personal information!Over here!</h2>
+        <h3>Interested in, who made this page?</h3>
 
-    <form method="POST" action="register">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Put your email here" maxlength="50"/>
-        <label>Name</label>
-        <input type="text" name="name" maxlength="50"/>
-        <label>Password</label>
-        <input type="password" name="password" maxlength="15"/>
-        <input type="submit" value="Register"/>
-    </form>
-</section>
-<section id="feedback">
-    <h2>So, what do you think?</h2>
+        <article class="vcard">
+            <img src = 'https://cdn1.iconfinder.com/data/icons/cat-power/128/cat_tied.png'/>
+            <span class="name">
+            Roksana Seletska
+                </span>
+            <a class="fn org url" href="http://www.levi9.com/">Levi9</a>
 
-    <form method="POST" action="feedback">
-        <label>I am:</label>
-        <input type="email" name="email" placeholder="Your email" maxlength="50"/>
-        <label>You think</label>
-        <textarea name="feedback" maxlength="20" placeholder="Lol you're funny"></textarea>
-        <input type="submit" value="Register"/>
-    </form>
-</section>
-______________________________
+            <div class="adr">
+                <span class="type">Work</span>:
+                <div class="street-address">Ohtirsky av.</div>
+                <span class="locality">Kyiv</span>,
+                <div class="country-name">UA</div>
+            </div>
+            <div class="tel">
+                <span class="type">Work</span> +38-097-000-00-00
+            </div>
+            <div class="tel">
+                <span class="type">Fax</span> +1-650-289-4041
+            </div>
+            <div>Email:
+                <span class="email"><a href="mailto:rocks@gmail.com">rocks@gmail.com</a></span>
+            </div>
+        </article>
+    </section>
+    <section id="register">
+        <h2>Bring your personal information!Over here!</h2>
+
+        <form method="POST" action="register">
+            <label for="register-email">Email</label>
+            <input id="register-email" type="email" name="email" placeholder="Put your email here" maxlength="50"/>
+            <label for="register-name">Name</label>
+            <input id="register-name" type="text" name="name" maxlength="50"/>
+            <label for="register-password">Password</label>
+            <input id="register-password" type="password" name="password" maxlength="15"/>
+            <input id="register-submit" type="submit" value="Register"/>
+        </form>
+    </section>
+    <section id="feedback">
+        <h2>So, what do you think?</h2>
+
+        <form method="POST" action="feedback">
+            <label for="feedback-email">I am:</label>
+            <input id="feedback-email" type="email" name="email" placeholder="Your email" maxlength="50"/>
+            <label for="feedback-text">You think</label>
+            <textarea id="feedback-text" name="feedback" maxlength="150" placeholder="Lol you're funny"></textarea>
+            <input type="submit" value="Submit feedback"/>
+        </form>
+    </section>
+</div>
 
 <footer>
-    <article>
-        <span><a href="#menu">Menu</a>|</span>
-        <span><a href="#top">Go to top</a>|</span>
-        <span><a href="#about">About</a>|</span>
-        <span><a href="#faq">Faq</a>|</span>
-        <span><a href="#contacts">Contacts</a>|</span>
-        <span><a href="#register">Register</a>|</span>
-        <span><a href="#feedback">Feedback</a></span>
-    </article>
-    <article>
+    <section class="nav-menu">
+        <a href="#menu">Menu</a>
+        <a href="#top">Go to top</a>
+        <a href="#about">About</a>
+        <a href="#faq">Faq</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#register">Register</a>
+        <a href="#feedback">Feedback</a>
+    </section>
+    <section>
         &copy Rocksy Seletska, LOLD Inc.
-    </article>
+    </section>
 
-    <a href="https://www.google.com/search?client=ubuntu&channel=fs&q=lol&ie=utf-8&oe=utf-8">Terms of service</a>
+    <section class="terms">
+    <a  href="https://www.google.com/search?client=ubuntu&channel=fs&q=lol&ie=utf-8&oe=utf-8">Terms of service</a>
+        </section>
 </footer>
+
 </body>
 </html>
