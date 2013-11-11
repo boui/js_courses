@@ -29,7 +29,7 @@ h1 {
 }
 
 h1:first-letter, h2:first-letter, h3:first-letter {
-    font-family: 'Mr Dafoe', 'Arial', cursive;
+    font-family: 'Mr Dafoe', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 1em;
 }
@@ -121,7 +121,7 @@ section.terms {
 section.terms a{
     font-size:1em;
     color: #ff5b6b;
-    font-family: 'Mr Dafoe','Arial', cursive;
+    font-family: 'Mr Dafoe','Arial', sans-serif;
 }
 
 article.vcard img {
@@ -154,6 +154,6 @@ article.vcard {
 article.vcard span.name {
     display: block;
     font-size: 2em;
-    font-family: 'Mr Dafoe', 'Arial', cursive;
+    font-family: 'Mr Dafoe', 'Arial', sans-serif;
     font-weight: 400;
 }
