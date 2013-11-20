@@ -65,7 +65,7 @@ function deepCopy(object){
     return copyObject(object, {})
 }
 
-var getFriends = function(userId, people) {
+function getFriends(userId, people) {
     //field is a name of target value for objects in list
     function contains(array, target, field){
         for(var i=0; i<array.length; i++){
