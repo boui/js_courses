@@ -1,0 +1,97 @@
+/*change defaults*/
+
+* {
+    margin: 0;
+    border-sizing: border-box;
+}
+
+html, body {
+    background-color: #2b2e2e;
+    color: lightgray;
+    height: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea {
+    border: 1px solid #595c5c;
+    color: lightgray;
+    background-color: #434646;
+}
+
+input[type="submit"] {
+    color: #b8860b;
+}
+
+input[type="submit"]:hover {
+    color: #ffa500;
+}
+
+h1 {
+    color: #f0f8ff;
+}
+
+h1:first-letter, h2:first-letter, h3:first-letter {
+    font-family: 'Mr Dafoe', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+a {
+    color: #ff8c00;
+}
+
+a:visited {
+    color: #b8860b;
+}
+
+a:hover {
+    color: #ffbd05;
+}
+
+footer {
+    padding-left: 10px;
+    background-color: #212424;
+}
+
+/* sticky footer*/
+div#wrapper {
+    min-height: 100%;
+    margin-bottom: -70px;
+}
+
+div#wrapper:after {
+    content: "";
+    display: block;
+}
+
+footer, div#wrapper:after {
+    padding-top: 10px;
+    height: 70px;
+}
+
+/*navigation*/
+
+.nav-menu {
+    -moz-border-radius: 1em 4em 1em 4em;
+    border-radius: 1em 4em 1em 4em;
+    background-color: #8b291f;
+}
+
+.nav-menu a {
+    margin-left: 2em;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #ffbd05;
+}
+
+nav li, nav ul {
+    display: inline-block;
+    list-style: none outside none;
+}
+
+.nav-menu a:after, .nav-menu a:before {
+    content: " ~ ";
+}
