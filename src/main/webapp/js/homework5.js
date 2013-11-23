@@ -78,12 +78,12 @@ var $ = function (selector) {
         return  {
             height: function (height) {
                 for (var i = 0; i < domElements.length; i++) {
-                    domElements[i].style.height = height+"px";
+                    domElements[i].style.height = height + "px";
                 }
             },
             width: function (width) {
                 for (var i = 0; i < domElements.length; i++) {
-                    domElements[i].style.width = width+"px";
+                    domElements[i].style.width = width + "px";
                 }
             }
         }
