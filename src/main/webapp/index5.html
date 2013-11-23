@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 5, Javascript</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="js/homework5.js"></script>
+</head>
+<body>
+<div style="border-bottom: 5px solid #0e0e0e; width: 100%">#1</div>
+<div class="node" width="100%" style="background-color: red">1</div>
+<div class="node" width="100%" style="background-color: white">2</div>
+<div class="node" width="100%" style="background-color: red">3</div>
+<div style="border-bottom: 5px solid #0e0e0e; width: 100%"></div>
+<div style="border-top: 5px solid #0e0e0e; width: 100%">#2</div>
+
+<div id="2"></div>
+<div style="border-bottom: 5px solid #0e0e0e; width: 100%"></div>
+<div style="border-top: 5px solid #0e0e0e; width: 100%">#3</div>
+<div id="3"></div>
+<div style="border-bottom: 5px solid #0e0e0e; width: 100%"></div>
+
+<div style="border-top: 5px solid #0e0e0e; width: 100%">#4</div>
+<div id="red" style="background-color: red;height:10px;"></div>
+<div id="blue" style="background-color: blue; height: 10px;"></div>
+<div style="border-bottom: 5px solid #0e0e0e; width: 100%"></div>
+
+<script type="text/javascript">
+    (function () {
+        <!--#1-->
+        (new App()).init();
+        <!--#2-->
+        var p = new Person({
+            name: 'Jack',
+            age: '10',
+            jump: function () {
+                return "My name is " + this.name + " and I can jump.";
+            }
+        });
+
+        var div2 = document.getElementById("2")
+        div2.innerHTML += "<div>" + "p.name ===" + p.name + "</div>";
+        div2.innerHTML += "<div>" + "p.age ===" + p.age + "</div>";
+        div2.innerHTML += "<div>" + "p.jump() ===" + p.jump() + "</div>";
+    })();
+    <!--3-->
+    var p2 = new Person2({
+        name: 'Jack',
+        age: '10',
+        jump: function () {
+            return "My name is " + this.getName() + " and I can jump.";
+        }
+    });
+
+    var div3 = document.getElementById("3")
+    div3.innerHTML += "<div>" + "p2.getName ===" + p2.getName() + "</div>";
+    div3.innerHTML += "<div>" + "p2.name===" + p2.name + "</div>";
+    div3.innerHTML += "<div>" + "p2.getAge===" + p2.getAge() + "</div>";
+    div3.innerHTML += "<div>" + "p2.age===" + p2.age + "</div>";
+    div3.innerHTML += "<div>" + "“p2.jump”===" + p2.jump() + "</div>";
+    div3.innerHTML += "<div>" + "p2.getJump===" + p2.getJump + "</div>"; // undefined
+<!--4-->
+    $('#red').width(100);
+    $('#blue').height(100);
+</script>
+</body>
+</html>
