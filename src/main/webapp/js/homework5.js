@@ -33,7 +33,9 @@ var App = function App() {
 var Person = function Person(args) {
     var extend = function extend(obj, args) {
         for (var i in args) {
-            obj[i] = args[i];
+            if(args.hasOwnProperty(i)) {
+                obj[i] = args[i];
+            }
         }
         return obj;
     }
