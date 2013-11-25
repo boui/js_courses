@@ -310,6 +310,10 @@ section h1 {
     width:24px;
 }
 
+.footer .right .smaller-text div{
+    display: inline-block;
+}
+
 .footer .right .text{
     font-family: Arial, Helvetica,sans-serif;
     font-weight: 100;
@@ -320,14 +324,112 @@ section h1 {
     font-family: Arial, Helvetica,sans-serif;
     font-weight: 100;
     font-size: 13px;
+    float: left;
+}
+
+.footer .right .smaller-text + button{
+    float: left;
 }
 
 .footer .right label{
     margin-right:10px;
 }
+
 /*6*/
 .copyright{
     padding: 10px 0 10px 0;
     text-align: center;
 }
 
+@media screen and (max-width:480px){
+
+    #body-wrapper {
+        border: 2px solid black;
+        width: 480px;
+        margin: 0 auto;
+        min-height: 100%;
+        background-color: #ffffff;
+    }
+
+    .top-nav{
+        margin-top: 0;
+        border-top: 10px solid #0e0e0e;
+        border-bottom: none;
+    }
+
+    .top-nav ul li, .top-nav ul {
+        border: none;
+    }
+
+
+    .top-nav ul li{
+        line-height: 70px;
+        width: 100%;
+        border-bottom: 3px solid #0e0e0e;
+    }
+
+    .top-nav-item img {
+        display: table-cell;
+        margin: 0 20px;
+    }
+
+    .first-section .pic{
+        display: none;
+    }
+
+    .contacts-section{
+        font-size: 18px;
+    }
+    .contacts-section .container .left{
+        width: 100%;
+    }
+
+    .contacts-section .container .right{
+        width: 100%;
+    }
+
+    .contacts-section .container .right .text{
+        /*width:400px;*/
+    }
+
+    .footer .container{
+        width:479px;
+        height: 230px;
+    }
+
+    .footer .container .left{
+        font-size: 20px;
+        display:none;
+    }
+
+    .footer .container .right{
+        width:100%;
+    }
+
+    .footer .container .right button{
+        height:150px;
+        width:200px;
+        font-size: 30px;
+        background-color: #eeeeee;
+    }
+    .footer .right .smaller-text{
+        margin-right: 10px;
+        width:180px;
+    }
+
+    .footer .right .smaller-text div{
+        font-size: 25px;
+        width:65px;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    .footer .container{
+        height:150px;
+    }
+    .footer .container .left ul, .footer .container .left ul li{
+        padding: 0 0;
+        display: block;
+    }
+}
