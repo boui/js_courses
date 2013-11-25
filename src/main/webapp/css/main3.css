@@ -1,5 +1,4 @@
 /*change defaults*/
-
 * {
     margin: 0;
     padding: 0;
@@ -9,77 +8,112 @@
 }
 
 html, body {
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 200;
     background-color: #eeeeee;
     color: #212424;
     height: 100%;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea {
-    border: 1px solid #595c5c;
-    color: lightgray;
-    background-color: #434646;
-}
-
-input[type="submit"] {
-    color: #b8860b;
-}
-
-input[type="submit"]:hover {
-    color: #ffa500;
-}
-
 h1 {
-    color: #0e0e0e;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
     font-weight: 200;
-    font-family: 'Arial', sans-serif;
+}
+
+button{
+    background: #d3d3d3;
+    border: 2px solid #0e0e0e;
+    font-size: 16px;
+    color:#0e0e0e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+input[type="text"], input[type="email"] {
+    border: 2px solid #595c5c;
+    color: #0e0e0e;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+input[type=checkbox].css-checkbox {
+    display: none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 25px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 14px;
+    font-weight: 200;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -20px;
+}
+
+label.css-label {
+    background-image: url("../img/checkbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 a {
-    color: #ff8c00;
+    color: #3662cc;
 }
 
 a:visited {
-    color: #b8860b;
+    color: #3662cc;
 }
 
 a:hover {
-    color: #ffbd05;
-}
-
-footer {
-    /*padding-left: 10px;*/
-    background-color: #212424;
+    color: #3662cc;
 }
 
 /* sticky footer*/
 #body-wrapper {
     border: 2px solid black;
     width: 960px;
-    margin: 0 auto -70px auto;
+    margin: 0 auto;
     min-height: 100%;
+    background-color: #ffffff;
 }
 
-#body-wrapper:after {
-    content: "";
-    display: block;
+
+/*screen splitted in half*/
+
+.container {
+    display: inline-block;
 }
 
-footer, #body-wrapper:after {
-    padding-top: 10px;
-    height: 70px;
+.container .left, .container .right {
+    float: left;
 }
 
 /*navigation*/
 
 .top-nav {
-    text-align: center;
-    border-top: 6px double #595c5c;
-    border-bottom: 6px double #595c5c;
+    margin-top: 2px;
+    border-top: 6px double #0e0e0e;
+    border-bottom: 6px double #0e0e0e;
 }
 
-.top-nav-item{
-    margin: 15px auto;
+.top-nav-item {
+    margin: 10px 0 10px 35px;
     display: inline-table;
 }
 
@@ -88,18 +122,212 @@ footer, #body-wrapper:after {
     list-style: none outside none;
 }
 
-.top-nav ul li{
+.top-nav ul li {
     border-right: 3px solid black;
     width: 220px;
 }
+
 .top-nav ul li:last-child {
     border: none;
 }
 
 .top-nav-item img {
     display: table-cell;
+    margin: 0 4px;
 }
 
 .top-nav-item span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
     display: table-cell;
 }
+
+/*sections*/
+
+section {
+    padding: 5px 30px 30px 30px;
+    border-top: 2px solid #0e0e0e;
+    border-bottom: 2px solid #0e0e0e;
+}
+
+section h1 {
+    text-align: center;
+}
+
+/*1*/
+.first-section {
+    margin-top: 2px;
+}
+
+.first-section .pic {
+    margin-right: 30px;
+    margin-bottom: 15px;
+    height: 115px;
+    width: 190px;
+    border: 1px dashed #2b2e2e;
+}
+
+.first-section .text {
+    display: inline-block;
+}
+
+.pic.left-pic {
+    overflow: hidden;
+    float: left;
+    display: inline;
+    clear: both;
+}
+
+.pic.right-pic {
+    display: inline;
+    float: right;
+    clear: right;
+}
+
+/*2*/
+.faq-section dl dd {
+    margin: 0 0 10px 50px;
+}
+
+/*3*/
+
+.contacts-section .container .left{
+    margin: 5px 30px 10px 0;
+    border: 1px solid #0e0e0e;
+}
+
+
+.contacts-section .container .right img {
+    height: 24px;
+    width: 24px;
+}
+
+.contacts-section .container .right .text {
+    display: inline-table;
+    width: 370px;
+}
+
+.contacts-section .container .right .text p {
+    float: right;
+}
+
+/*4*/
+.sit-section {
+    text-align: center;
+}
+
+.sit-section h1 {
+    margin-top: 30px;
+}
+
+.sit-section .credentials {
+    display: table;
+    margin: 50px auto;
+}
+
+.sit-section .credentials label {
+    display: table-row;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sit-section .credentials .label {
+    display: table-cell;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.sit-section .credentials .imput {
+    display: table-cell;
+}
+
+/*5*/
+.footer{
+    padding:0;
+    border-top: none;
+}
+
+.footer .container{
+    height: 85px;
+    width:956px;
+}
+
+.footer .left{
+    height: 100%;
+    background: #212424;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+.footer .right{
+    height: 100%;
+    width: 50%;
+    background-color: #d3d3d3;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.footer .clear{
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+    font-size:0pt;
+    margin-top: -5px;
+}
+
+.footer .left ul {
+    margin: auto 0;
+}
+
+.footer .left ul, .footer .left ul li {
+    display: inline-block;
+}
+
+.footer .left ul li {
+    padding: 0 25px;
+    border-right: 2px solid #0e0e0e;
+}
+
+.footer .left ul li:first-child {
+    padding-left: 0;
+}
+
+.footer .left ul li:last-child {
+    border-right: none;
+}
+
+.footer .left ul li a, .footer .left ul li a:hover, .footer .left ul li a:visited {
+    font-size: 14px;
+    font-weight: 200;
+    color: #f21f46;
+}
+
+.footer .right img{
+    height:24px;
+    width:24px;
+}
+
+.footer .right .text{
+    font-family: Arial, Helvetica,sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.footer .right .smaller-text{
+    font-family: Arial, Helvetica,sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.footer .right label{
+    margin-right:10px;
+}
+/*6*/
+.copyright{
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
