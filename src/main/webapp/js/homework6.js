@@ -42,6 +42,8 @@ function Table(selector, xn, yn) {
         var newX = position.x + dx;
         var newY = position.y + dy;
 
+        console.log(newX + ";" + newY);
+
         clearCurrentPosition();
 
         if (newX < 0 || newX > xsize) return;
@@ -56,17 +58,22 @@ function Table(selector, xn, yn) {
 
     document.onkeydown = function (e) {
         switch (e.keyCode) {
-            case 40:
-                move(0, -1);
-                break;
+
             case 37:
-                move(-1, 0);
+                move(0, -1);
+                console.log("37");
                 break;
             case 38:
-                move(0, 1);
+                move(-1, 0);
+                console.log("38");
                 break;
             case 39:
+                move(0, 1);
+                console.log("39");
+                break;
+            case 40:
                 move(1, 0);
+                console.log("40");
                 break;
             default:
                 return false;
